@@ -1,0 +1,29 @@
+###
+# Get all tasks
+GET http://localhost:3000/dev/tasks/
+
+###
+# Create a new task
+POST http://localhost:3000/dev/tasks/
+Content-Type: application/json
+
+{
+  "name": "Write E2E tests",
+  "description": "Cover all endpoints with E2E tests"
+}
+
+###
+# Update a task with id 1
+PUT http://localhost:3000/dev/tasks/1
+Content-Type: application/json
+
+{
+  "name": "Draft documentation (revised)",
+  "description": "Update the initial draft for the project README.",
+  "isCompleted": true
+}
+
+###
+# Delete a task with id 2
+DELETE http://localhost:3000/dev/tasks/2
+
